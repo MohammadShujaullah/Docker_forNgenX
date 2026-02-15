@@ -5,7 +5,7 @@ const PORT=8000;
 
 
 app.get("/",(req,res)=>{
-     return res.json("dockerization of the node app");
+     return res.json("dockerization of the node app2");
 
 })
 
