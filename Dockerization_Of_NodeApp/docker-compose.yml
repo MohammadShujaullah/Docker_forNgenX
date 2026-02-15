@@ -1,0 +1,21 @@
+version:'3.8'
+
+services:
+  postgres:
+    image:postgres # it comes from hub.docker.com
+
+    ports:
+     - "5432:5432" # host:container
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB:review 
+
+   redis:
+     image:redis # it comes from hub.docker.com
+
+     ports:
+      - "6379:6379" # host:container
+    environment:
+       REDIS_PASSWORD: password
+          
