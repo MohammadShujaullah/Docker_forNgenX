@@ -8,9 +8,10 @@ RUN apt-get install -y nodejs
 
 COPY package.json package.json
 COPY package-lock.json package-lock.json
+RUN npm install
 COPY main.js main.js
 
 
-RUN npm install
+
 
 ENTRYPOINT ["node", "main.js"]
