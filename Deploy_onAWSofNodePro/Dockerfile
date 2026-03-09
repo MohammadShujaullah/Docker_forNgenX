@@ -2,7 +2,7 @@
 
 
 #stage 1
-FROM node:18 AS builder
+FROM node:20.20.1-alpine3.23 AS builder
 
 WORKDIR /build
 
